@@ -1,4 +1,5 @@
-// FileDiff.cpp : Defines the entry point for the console application.
+// FileDiff.cpp : Usage: filediff 2 file1 file2
+//						 filediff 3 file1 file2 file3
 //
 
 #include "stdafx.h"
@@ -60,7 +61,7 @@ int main(int argc, char** argv)
 	}
 
 	/* Close all the files */
-	for(int i = 0; i < NUMBER_OF_FILES; i++)
+	for(int i = 0; i < numFiles; i++)
 		fclose(toDiff[i]);
 
 	/* Clean up the heap */
