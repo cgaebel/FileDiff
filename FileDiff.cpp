@@ -10,7 +10,6 @@ extern "C" {
 
 /* Precondition - All files are the same size.		*/
 /* Precondition - The codebase starts at 0x00400000 */
-/* Precondition - The code is not polymorphic		*/
 int main(int argc, char** argv)
 {
 	int i, j;
